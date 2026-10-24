@@ -1,60 +1,37 @@
-# Africaventura Mountain Guide — website starter
+# Table Mountain by foot
 
-A simple, responsive, two-page personal profile website:
-- `index.html` — professional profile / CV-style landing page
-- `gallery.html` — photography gallery
-- `style.css` — all visual styling
-- `script.js` — small header effect
-- `images/` — add the guide's own photographs here
+Website for Johan Jansen van Vuuren, mountain guide on Table Mountain, Cape Town.
 
-No framework, build step, booking system or client management is required.
+## Files
+- `index.html`: main page (hero, about, activities, routes, safety, testimonials, contact)
+- `gallery.html`: photo gallery with a full-screen viewer
+- `css/style.css`: colours, fonts, layout
+- `js/main.js`: menu, photo placeholders, gallery viewer
+- `images/`: `johan.jpg` (portrait) and `gallery/` (trip photos)
 
-## 1. Personalise the website
+## Things to fill in
+Search the files for these:
+- `27XXXXXXXXX`: Johan's WhatsApp number (country code 27, no + or leading 0)
+- `hello@example.com`: his email
+- `[` square brackets: qualifications and client quotes (in `index.html`)
+- `Table Mountain by foot`: the business name, if it changes
 
-Open `index.html` and `gallery.html` in a text editor (for example, Visual Studio Code).
+## Adding photos
+1. Resize to about 1600px wide (JPG, under ~400 KB each).
+2. Portrait: save as `images/johan.jpg`.
+3. Gallery: save in `images/gallery/`, then copy a `<li>` block in `gallery.html` and update `src`, `alt` and the caption.
+Until a photo exists, a placeholder is shown instead.
+Ask clients for permission before posting photos where they can be recognised.
 
-Search and replace:
-- `[GUIDE NAME]` with his name
-- `YOUR-EMAIL@example.com` with his professional email address
+## Changing text
+All text is in `index.html` and `gallery.html`; edit it directly.
 
-Update the biography, skills and approach sections with his real experience. Add only qualifications, certifications and guiding experience that he actually has. The current text is a starter draft, not a verified biography.
+## Publishing on GitHub Pages
+1. Create a repo in the organization named `<org-name>.github.io`.
+2. Upload all files (keep the folder structure).
+3. Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
+4. The site appears at `https://<org-name>.github.io` after a minute or two.
 
-## 2. Add photographs
-
-Copy photos into the `images` folder and use these exact filenames, or update the image paths in `gallery.html`:
-- `mountain-01.jpg`
-- `mountain-02.jpg`
-- `mountain-03.jpg`
-- `mountain-04.jpg`
-- `mountain-05.jpg`
-- `mountain-06.jpg`
-
-Use photographs he owns or has permission to publish. Good choices include a strong portrait, guiding in the field, mountain landscapes, and a group or expedition photo (with permission). If a photo is missing, the gallery displays a placeholder.
-
-The homepage uses two remote Unsplash images as temporary design imagery. Replace their URLs in `style.css` with his own photographs for a more personal website.
-
-## 3. Preview locally
-
-Double-click `index.html` to open it in a browser. Click Gallery to test the second page. Internet is needed for the temporary remote background photos and Google Fonts; the rest is local.
-
-## 4. Publish free with GitHub Pages
-
-1. Sign in to GitHub or create an account at https://github.com.
-2. Create a **public repository** named `your-github-username.github.io` (replace the example with his GitHub username), or choose another repository name if you prefer a project URL.
-3. Unzip this folder on your computer.
-4. Upload the *contents* of this folder — `index.html`, `gallery.html`, `style.css`, `script.js`, `README.md`, and the `images` folder — to the root of the repository. Do not upload only the ZIP file.
-5. In the repository, open **Settings → Pages**.
-6. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then click **Save**.
-7. Wait a few minutes. For a repository named `your-github-username.github.io`, the site should appear at `https://your-github-username.github.io/`. For a differently named repository, it is usually `https://your-github-username.github.io/repository-name/`.
-
-## Before publishing checklist
-
-- [ ] Replace all instances of `[GUIDE NAME]`.
-- [ ] Add the correct professional email.
-- [ ] Check every sentence against his actual experience.
-- [ ] Add his own photos and confirm permission to publish them.
-- [ ] Test the site on a phone and a computer.
-- [ ] Check that the email link works.
-- [ ] Confirm any Africaventura name/logo usage is appropriate.
-
-This is a static portfolio website. It does not accept bookings or payments, and it does not collect visitor information.
+## Custom domain (later)
+Settings → Pages → Custom domain → enter his domain.
+At the domain registrar, add the DNS records GitHub shows, then tick "Enforce HTTPS".

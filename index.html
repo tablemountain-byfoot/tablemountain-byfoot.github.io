@@ -1,131 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meet [GUIDE NAME], mountain guide and Guide Operations Specialist at Africaventura.">
-  <title>[GUIDE NAME] | Mountain Guide &amp; Guide Operations Specialist</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- BUSINESS NAME: change it here, in the header, hero and footer (search for "Table Mountain by foot") -->
+  <title>Table Mountain by foot | Mountain guide Johan Jansen van Vuuren</title>
+  <meta name="description" content="Guided hiking, trail running, scrambling and rock climbing on Table Mountain, Cape Town, with Johan Jansen van Vuuren. Guiding since 2010, in English and Afrikaans.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2324312A'/%3E%3Cpath d='M3 24 L8 14 L10 15 L12 11 L22 11 L24 15 L27 19 L29 24Z' fill='%23B7834A'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Home">[GUIDE NAME]<span>Mountain Guide</span></a>
-    <nav aria-label="Main navigation">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Table Mountain by foot</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
       <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
+      <a href="#activities">Activities</a>
+      <a href="#routes">Routes</a>
       <a href="gallery.html">Gallery</a>
-      <a class="nav-cta" href="#contact">Get in touch</a>
+      <a href="#contact" class="nav-book">Book a trip</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-image" role="img" aria-label="Mountain landscape"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow">MOUNTAINS · PEOPLE · ADVENTURE</p>
-        <h1>Good journeys<br>start with <em>good guides.</em></h1>
-        <p class="hero-copy">Mountain guide and Guide Operations Specialist at Africaventura, bringing people into the mountains with care, confidence and a deep respect for the outdoors.</p>
-        <div class="hero-actions">
-          <a class="button button-light" href="#about">Discover my story <span aria-hidden="true">↘</span></a>
-          <a class="text-link light-link" href="gallery.html">Explore the gallery <span aria-hidden="true">↗</span></a>
-        </div>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-contours" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M-50 120 C 200 60, 420 160, 700 110 S 1200 40, 1500 130"/>
+        <path d="M-50 170 C 220 110, 440 210, 720 160 S 1210 90, 1500 180"/>
+        <path d="M-50 225 C 240 165, 460 265, 740 215 S 1220 145, 1500 235"/>
+        <path d="M900 60 C 980 20, 1120 30, 1150 80 S 1060 150, 980 130 S 860 90, 900 60Z"/>
+        <path d="M930 70 C 990 45, 1090 50, 1110 85 S 1050 125, 990 115 S 905 92, 930 70Z"/>
+        <path d="M180 300 C 300 260, 420 290, 400 330 S 250 380, 190 350 S 120 320, 180 300Z"/>
+      </g>
+    </svg>
+
+    <div class="wrap hero-content">
+      <h1 class="hero-title">Table Mountain<br>by foot</h1>
+      <p class="hero-lead">Guided hikes, trail runs, scrambles and climbs on Table Mountain with Johan Jansen van Vuuren, guiding on the mountain since 2010.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Plan your trip</a>
+        <a class="btn btn-ghost" href="#activities">See the activities</a>
       </div>
-      <div class="hero-note"><span class="note-line"></span><span>Curiosity leads the way.</span></div>
-    </section>
+    </div>
 
-    <section class="intro section-wrap" id="about">
-      <div class="section-label"><span>01</span> THE PERSON BEHIND THE GUIDE</div>
-      <div class="intro-grid">
-        <div>
-          <p class="display-heading">A guide by profession.<br><em>An explorer at heart.</em></p>
-        </div>
-        <div class="intro-text">
-          <p class="lead">I’m [GUIDE NAME] — a mountain guide and Guide Operations Specialist with Africaventura.</p>
-          <p>For me, guiding is about more than reaching a summit. It’s about helping people feel at home in wild places, making thoughtful decisions in changing conditions, and creating experiences that stay with them long after the journey ends.</p>
-          <p>My work brings together time in the mountains, practical logistics and a commitment to making every adventure safe, considered and meaningful.</p>
-          <p class="signature">[GUIDE NAME]</p>
-        </div>
+    <!-- Table Mountain silhouette: Devil's Peak, the table, Kloof Nek, Lion's Head, Signal Hill -->
+    <svg class="hero-mountain" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path class="m-back" d="M0 400 L0 250 C 80 225, 140 180, 190 110 L 228 62 L 268 112 C 300 135, 325 145, 362 148 L 382 140 L 420 82 L 442 68 L 982 64 L 1002 82 L 1032 172 C 1062 222, 1090 240, 1120 240 C 1150 220, 1170 150, 1198 128 C 1214 116, 1232 118, 1246 134 C 1266 170, 1292 222, 1332 258 C 1372 280, 1410 290, 1440 294 L 1440 400 Z"/>
+      <path class="tablecloth" d="M436 70 C 520 52, 600 60, 690 54 C 780 48, 880 58, 990 62 L 1000 80 C 960 96, 930 84, 900 104 C 870 120, 850 96, 820 112 C 790 126, 760 100, 720 116 C 690 128, 660 104, 620 118 C 585 130, 560 100, 520 112 C 490 120, 460 96, 430 90 Z"/>
+      <path class="m-front" d="M0 400 L0 330 C 180 300, 360 315, 560 322 C 760 330, 960 302, 1160 320 C 1280 330, 1370 338, 1440 342 L1440 400 Z"/>
+    </svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="wrap about-grid">
+      <figure class="portrait">
+        <!-- Add a photo of Johan as images/johan.jpg -->
+        <img src="images/johan.jpg" alt="Johan Jansen van Vuuren on Table Mountain" loading="lazy">
+        <span class="img-placeholder">Photo of Johan: add images/johan.jpg</span>
+      </figure>
+      <div class="about-text">
+        <h2>Your guide</h2>
+        <p>I’m Johan. I’ve been guiding on Table Mountain since 2010, and I still find new lines through its gorges, buttresses and ridges.</p>
+        <p>Whether it’s your first hike up the mountain or you want to climb its sandstone faces, I’ll choose the route that suits your fitness, your experience and the day’s weather.</p>
+        <p>I guide in English and Afrikaans.</p>
+        <h3>Qualifications</h3>
+        <ul class="peak-list">
+          <!-- Replace with Johan's real qualifications -->
+          <li>[Guide registration or qualification]</li>
+          <li>[First aid certification]</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="quote-band">
-      <div class="quote-mark">“</div>
-      <blockquote>The summit is a moment.<br>How you get there is the story.</blockquote>
-      <p>A thoughtful approach to every mountain day.</p>
-    </section>
+  <!-- ACTIVITIES -->
+  <section id="activities" class="section activities">
+    <div class="wrap">
+      <h2>What we can do on the mountain</h2>
+      <p class="section-intro">Four ways to experience Table Mountain. Mix them in one day if you like.</p>
+      <ul class="activity-list">
+        <li class="activity">
+          <h3>Hiking</h3>
+          <p>From gentle contour paths to steep gorges up to the summit plateau. Routes for every fitness level.</p>
+          <p class="activity-level">All levels</p>
+        </li>
+        <li class="activity">
+          <h3>Trail running</h3>
+          <p>Run the mountain’s trail network with someone who knows every junction. Ideal if you want to cover a lot of ground.</p>
+          <p class="activity-level">Fit runners</p>
+        </li>
+        <li class="activity">
+          <h3>Scrambling</h3>
+          <p>Hands-on routes over rock, ledges and chains, somewhere between a hike and a climb. Bigger views, more adrenaline.</p>
+          <p class="activity-level">A head for heights</p>
+        </li>
+        <li class="activity">
+          <h3>Rock climbing</h3>
+          <p>Roped climbing on Table Mountain sandstone, for beginners trying it for the first time and experienced climbers looking for classic lines.</p>
+          <p class="activity-level">Beginner to advanced</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="expertise section-wrap" id="expertise">
-      <div class="section-label"><span>02</span> WHAT I BRING</div>
-      <div class="expertise-heading">
-        <h2>Experience with purpose.</h2>
-        <p>A mix of field experience, operational thinking and people-first leadership.</p>
+  <!-- ROUTES (example list: edit to match what Johan offers) -->
+  <section id="routes" class="section routes">
+    <div class="wrap">
+      <h2>Some favourite routes</h2>
+      <p class="section-intro">An example list. Every trip is planned around you and the weather.</p>
+      <ul class="route-list">
+        <li>
+          <h3>Platteklip Gorge</h3>
+          <p>The direct way up the front face to the top.</p>
+          <p class="route-meta"><span>Hike</span><span>2–3 hours</span></p>
+        </li>
+        <li>
+          <h3>India Venster</h3>
+          <p>An exposed scramble with views over the city.</p>
+          <p class="route-meta"><span>Scramble</span><span>Half day</span></p>
+        </li>
+        <li>
+          <h3>Skeleton Gorge</h3>
+          <p>Forest, ladders and waterfalls from Kirstenbosch.</p>
+          <p class="route-meta"><span>Hike</span><span>Half day</span></p>
+        </li>
+        <li>
+          <h3>Kasteelspoort</h3>
+          <p>Atlantic views from the Twelve Apostles side.</p>
+          <p class="route-meta"><span>Hike</span><span>Half day</span></p>
+        </li>
+        <li>
+          <h3>Lion’s Head</h3>
+          <p>Chains and ladders to a 360° view from the summit.</p>
+          <p class="route-meta"><span>Hike and scramble</span><span>2–3 hours</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="section safety">
+    <div class="wrap safety-grid">
+      <div>
+        <h2>Safety first, every time</h2>
+        <p>Table Mountain’s weather can turn in minutes. I watch the forecast, carry first-aid and emergency gear, and change the plan when the mountain says so.</p>
       </div>
-      <div class="expertise-grid">
-        <article class="expertise-card">
-          <span class="card-number">01 / FIELD</span>
-          <div class="line-icon" aria-hidden="true">⌁</div>
-          <h3>Mountain guiding</h3>
-          <p>Supporting people in mountain environments through sound judgement, preparation and an appreciation of the terrain.</p>
-        </article>
-        <article class="expertise-card">
-          <span class="card-number">02 / OPERATIONS</span>
-          <div class="line-icon" aria-hidden="true">↗</div>
-          <h3>Guide operations</h3>
-          <p>Helping trips run smoothly through careful planning, coordination, logistics and attention to detail.</p>
-        </article>
-        <article class="expertise-card">
-          <span class="card-number">03 / PEOPLE</span>
-          <div class="line-icon" aria-hidden="true">◎</div>
-          <h3>People &amp; leadership</h3>
-          <p>Building trust, communicating clearly and helping different people feel supported throughout an adventure.</p>
-        </article>
-      </div>
-      <p class="edit-note">Personalise these sections with his specific qualifications, mountain experience and areas of expertise.</p>
-    </section>
+      <ul class="peak-list">
+        <li>Small groups</li>
+        <li>Routes matched to your level</li>
+        <li>First-aid and emergency gear on every trip</li>
+        <li>Planning based on the weather</li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="image-feature">
-      <div class="feature-photo" role="img" aria-label="Hiker looking across a mountain range"></div>
-      <div class="feature-copy">
-        <p class="eyebrow">BEYOND THE SUMMIT</p>
-        <h2>The best memories<br>are made <em>out there.</em></h2>
-        <p>Big landscapes, small moments, changing weather and the people you share it all with. These are the things that make mountain life special.</p>
-        <a class="text-link" href="gallery.html">A glimpse into the journey <span aria-hidden="true">↗</span></a>
+  <!-- TESTIMONIALS (replace with real client quotes) -->
+  <section class="section quotes">
+    <div class="wrap">
+      <h2>From the trail</h2>
+      <div class="quote-grid">
+        <blockquote>
+          <p>[Add a client quote here]</p>
+          <footer>[Client name, country]</footer>
+        </blockquote>
+        <blockquote>
+          <p>[Add a second client quote here]</p>
+          <footer>[Client name, country]</footer>
+        </blockquote>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="values section-wrap">
-      <div class="section-label"><span>03</span> MY APPROACH</div>
-      <div class="values-grid">
-        <h2>Prepared.<br><em>Present.</em><br>Passionate.</h2>
-        <div class="values-list">
-          <div><span>01</span><p><strong>Safety first</strong><br>Preparation, awareness and sound decisions matter at every stage.</p></div>
-          <div><span>02</span><p><strong>Respect for place</strong><br>Approaching landscapes, local communities and the natural world with care.</p></div>
-          <div><span>03</span><p><strong>People make the journey</strong><br>Good guiding means listening, adapting and helping others grow in confidence.</p></div>
-        </div>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-inner">
+      <h2>Plan your trip</h2>
+      <p>Tell me what you’d like to do, when you’re in Cape Town and how many people are coming. I’ll suggest a route.</p>
+      <div class="contact-actions">
+        <!-- CONTACT: replace 27XXXXXXXXX with Johan's number (country code 27, no + or leading 0) -->
+        <a class="btn btn-primary" href="https://wa.me/27XXXXXXXXX">Message on WhatsApp</a>
+        <!-- CONTACT: replace with Johan's email -->
+        <a class="btn btn-dark" href="mailto:hello@example.com">Send an email</a>
       </div>
-    </section>
+      <p class="contact-lang">English or Afrikaans, whichever you prefer.</p>
+    </div>
+  </section>
+</main>
 
-    <section class="contact" id="contact">
-      <div class="contact-inner">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Every great adventure<br>begins with a <em>conversation.</em></h2>
-        <p>For professional enquiries and collaborations, feel free to get in touch.</p>
-        <!-- Replace the email address below with his professional email. -->
-        <a class="button button-dark" href="mailto:YOUR-EMAIL@example.com">Contact me <span aria-hidden="true">↗</span></a>
-        <p class="company-note">Guide Operations Specialist · Africaventura</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="wordmark footer-wordmark" href="index.html">[GUIDE NAME]<span>Mountain Guide</span></a>
-    <p>Made for the love of wild places.</p>
-    <a href="gallery.html">View gallery ↗</a>
-  </footer>
-  <script src="script.js"></script>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span class="year"></span> Table Mountain by foot</p>
+    <p>Mountain guiding in Cape Town since 2010</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
