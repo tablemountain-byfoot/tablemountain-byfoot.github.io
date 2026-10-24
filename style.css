@@ -82,13 +82,6 @@ h1 em, h2 em, .display-heading em, .values h2 em { font-family: var(--serif); fo
 .values-list span { font-size: 10px; color: var(--orange); font-weight: 700; padding-top: 3px; }
 .values-list p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .values-list strong { display: inline-block; color: var(--ink); font-size: 14px; margin-bottom: 4px; }
-.contact { background: #e8e8df; text-align: center; padding: 100px 24px 95px; }
-.contact-inner { max-width: 680px; margin: auto; }
-.contact .eyebrow { color: var(--orange); }
-.contact h2 { font-size: clamp(37px, 5vw, 60px); line-height: 1.14; margin: 23px 0; }
-.contact h2 em { color: var(--green); }
-.contact-inner > p:not(.eyebrow):not(.company-note) { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
-.company-note { font-size: 10px; text-transform: uppercase; letter-spacing: .15em; color: var(--muted); margin-top: 28px; }
 .site-footer { min-height: 110px; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 25px 7.2%; font-size: 11px; color: var(--muted); }
 .footer-wordmark { color: var(--ink); }
 .site-footer p { margin: 0; }
@@ -111,8 +104,6 @@ h1 em, h2 em, .display-heading em, .values h2 em { font-family: var(--serif); fo
 .image-placeholder small { color: var(--muted); font-size: 11px; }
 .gallery-item figcaption { padding-top: 13px; font-size: 12px; color: var(--muted); }
 .gallery-item figcaption span { color: var(--orange); font-size: 10px; font-weight: 700; margin-right: 14px; }
-.gallery-bottom { text-align: center; background: var(--cream); padding: 55px 20px 65px; }
-.gallery-bottom p { font: 24px var(--serif); margin: 0 0 20px; }
 @media (max-width: 760px) {
   .site-header { height: auto; min-height: 80px; padding: 20px 6%; align-items: flex-start; gap: 18px; }
   nav { gap: 12px; flex-wrap: wrap; justify-content: flex-end; font-size: 11px; }
@@ -134,7 +125,6 @@ h1 em, h2 em, .display-heading em, .values h2 em { font-family: var(--serif); fo
   .image-feature { grid-template-columns: 1fr; }
   .feature-photo { min-height: 330px; }
   .feature-copy { padding: 48px 7%; }
-  .contact { padding: 75px 7%; }
   .site-footer { padding: 25px 6%; flex-wrap: wrap; }
   .site-footer p { order: 3; width: 100%; }
   .gallery-hero { padding: 70px 7%; }

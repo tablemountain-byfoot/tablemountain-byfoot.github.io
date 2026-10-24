@@ -35,7 +35,7 @@ The homepage uses two remote Unsplash images as temporary design imagery. Replac
 
 ## 3. Preview locally
 
-Double-click `index.html` to open it in a browser. Click Gallery to test the second page. Internet is needed for the temporary remote background photos and Google Fonts; the rest is local.
+the website can be found using https://tablemountain-byfoot.github.io/
 
 ## 4. Publish free with GitHub Pages
 
