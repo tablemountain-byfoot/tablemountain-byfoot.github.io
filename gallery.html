@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallery | Table Mountain by foot</title>
-  <meta name="description" content="Photos from guided trips on Table Mountain with Johan Jansen van Vuuren.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2324312A'/%3E%3Cpath d='M3 24 L8 14 L10 15 L12 11 L22 11 L24 15 L27 19 L29 24Z' fill='%23B7834A'/%3E%3C/svg%3E">
+  <meta name="description" content="Mountain guiding, landscapes and adventures with [GUIDE NAME].">
+  <title>Gallery | [GUIDE NAME]</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">Table Mountain by foot</a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" class="nav">
-      <a href="index.html">Home</a>
-      <a href="index.html#activities">Activities</a>
+  <header class="site-header gallery-header">
+    <a class="wordmark" href="index.html">[GUIDE NAME]<span>Mountain Guide</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#about">About</a>
+      <a href="index.html#expertise">Expertise</a>
       <a href="gallery.html" aria-current="page">Gallery</a>
-      <a href="index.html#contact" class="nav-book">Book a trip</a>
+      <a class="nav-cta" href="index.html#contact">Get in touch</a>
     </nav>
-  </div>
-</header>
-
-<main>
-  <section class="gallery-intro">
-    <div class="wrap">
-      <h1>On the mountain</h1>
-      <p>Trips with clients all over Table Mountain.</p>
-    </div>
-  </section>
-
-  <section class="section gallery-section">
-    <div class="wrap">
-      <!--
-        ADDING PHOTOS:
-        1. Put photos in images/gallery/ (resize to about 1600px wide first)
-        2. Copy one <li> block below, change src, alt and the caption
-        3. Delete any blocks you don't use
-      -->
-      <ul class="gallery-grid">
-        <li><figure><button class="gallery-item"><img src="images/gallery/01.jpg" alt="Clients on the summit plateau" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>Summit plateau</figcaption></figure></li>
-        <li><figure><button class="gallery-item"><img src="images/gallery/02.jpg" alt="Scrambling on India Venster" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>India Venster</figcaption></figure></li>
-        <li><figure><button class="gallery-item"><img src="images/gallery/03.jpg" alt="Rock climbing on Table Mountain sandstone" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>Rock climbing</figcaption></figure></li>
-        <li><figure><button class="gallery-item"><img src="images/gallery/04.jpg" alt="Trail running above the city" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>Trail running</figcaption></figure></li>
-        <li><figure><button class="gallery-item"><img src="images/gallery/05.jpg" alt="Hiking up Skeleton Gorge" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>Skeleton Gorge</figcaption></figure></li>
-        <li><figure><button class="gallery-item"><img src="images/gallery/06.jpg" alt="Sunset from Lion's Head" loading="lazy"><span class="img-placeholder">Add photo</span></button><figcaption>Lion’s Head</figcaption></figure></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section contact">
-    <div class="wrap contact-inner">
-      <h2>Want to be in the next photo?</h2>
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="index.html#contact">Plan your trip</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<dialog class="lightbox" aria-label="Photo viewer">
-  <img src="" alt="">
-  <p class="lightbox-caption"></p>
-  <button class="lightbox-btn lightbox-prev" aria-label="Previous photo">‹</button>
-  <button class="lightbox-btn lightbox-next" aria-label="Next photo">›</button>
-  <button class="lightbox-close">Close</button>
-</dialog>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p>© <span class="year"></span> Table Mountain by foot</p>
-    <p>Mountain guiding in Cape Town since 2010</p>
-  </div>
-</footer>
-<script src="js/main.js"></script>
+  </header>
+  <main>
+    <section class="gallery-hero">
+      <p class="eyebrow">FIELD NOTES IN PICTURES</p>
+      <h1>A life lived<br><em>outside.</em></h1>
+      <p>Mountain days, remarkable landscapes and the moments in between.</p>
+    </section>
+    <section class="gallery-grid section-wrap" aria-label="Photo gallery">
+      <!-- Add your photos to the images folder and replace each placeholder filename below. -->
+      <figure class="gallery-item gallery-tall">
+        <img src="images/mountain-01.jpg" alt="Mountain landscape" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>01</span><strong>Add a mountain photo</strong><small>images/mountain-01.jpg</small></div>
+        <figcaption><span>01</span> High places, wide horizons</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/mountain-02.jpg" alt="Mountain guide on a trail" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>02</span><strong>Add a guiding photo</strong><small>images/mountain-02.jpg</small></div>
+        <figcaption><span>02</span> The journey matters</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/mountain-03.jpg" alt="Mountain peaks at sunrise" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>03</span><strong>Add a sunrise photo</strong><small>images/mountain-03.jpg</small></div>
+        <figcaption><span>03</span> Early starts, lasting memories</figcaption>
+      </figure>
+      <figure class="gallery-item gallery-wide">
+        <img src="images/mountain-04.jpg" alt="Wide mountain panorama" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>04</span><strong>Add a panorama</strong><small>images/mountain-04.jpg</small></div>
+        <figcaption><span>04</span> Room to breathe</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/mountain-05.jpg" alt="Outdoor adventure" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>05</span><strong>Add an adventure photo</strong><small>images/mountain-05.jpg</small></div>
+        <figcaption><span>05</span> Out there together</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/mountain-06.jpg" alt="Mountain trail" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="image-placeholder"><span>06</span><strong>Add a trail photo</strong><small>images/mountain-06.jpg</small></div>
+        <figcaption><span>06</span> One step at a time</figcaption>
+      </figure>
+    </section>
+    <section class="gallery-bottom">
+      <p>Like what you see?</p>
+      <a class="button button-dark" href="index.html#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="index.html">[GUIDE NAME]<span>Mountain Guide</span></a>
+    <p>Made for the love of wild places.</p>
+    <a href="index.html">Back to home ↗</a>
+  </footer>
 </body>
 </html>
